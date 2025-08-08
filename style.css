@@ -1,0 +1,37 @@
+/*
+ * Hoja de estilos personalizada para QullqiCripto.
+ * Este archivo complementa las clases de utilidad de Tailwind CSS,
+ * que se carga desde una CDN en el archivo index.html.
+ */
+
+/* Estilo base para la fuente del cuerpo del documento */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Estilo para el fondo con gradiente */
+.gradient-bg {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Estilos para los botones de llamada a la acción (CTA) */
+.cta-button {
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilos adicionales para las tarjetas de los cursos para el efecto hover */
+.transform:hover {
+    --tw-translate-y: -0.5rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transition-transform {
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
